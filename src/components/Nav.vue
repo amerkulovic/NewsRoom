@@ -1,8 +1,8 @@
 <template>
   <container class="flex justify-between py-5 px-5 absolute w-full z-20">
-    <div class="flex text-center">
-      <h1 class="text-5xl font-extrabold bg-white p-3">News</h1>
-      <h1 class="text-5xl font-thin bg-black text-white p-3">Room</h1>
+    <div class="flex text-center font-serif text-4xl">
+      <h1 class="font-extrabold bg-white p-3">News</h1>
+      <h1 class="font-thin bg-black text-white p-3">Room</h1>
     </div>
     <div className="opacity-90 hover:opacity-100 flex items-center justify-center text-center w-1/3">
       <input className="h-6 w-1/4 px-4 rounded-tl-xl rounded-bl-xl bg-white bg-opacity-25 outline-none" />
