@@ -5,7 +5,7 @@
       <h1 class="font-thin bg-black text-white p-3">Room</h1>
     </div>
     <div class="flex justify-center border-b-slate-500 border-b w-6/8">
-      <p class="w-1/2 mt-10 pb-5 font-serif">"NewsRoom, your dedicated platform for uncovering the latest truths, igniting minds with informed perspectives, and delivering breaking stories that captivate and inspire. We are committed to providing a comprehensive source of news, offering a diverse range of stories that empower you to stay well-informed in a rapidly evolving world.</p>
+      <p class="w-1/2 mt-10 pb-5 font-serif">NewsRoom, your dedicated platform for uncovering the latest truths, igniting minds with informed perspectives, and delivering breaking stories that captivate and inspire. We are committed to providing a comprehensive source of news, offering a diverse range of stories that empower you to stay well-informed in a rapidly evolving world.</p>
     </div>
     <div class="flex justify-around border-b-slate-500 border-b w-6/8 py-8">
       <p class="text-xs font-extralight w-1/2">
