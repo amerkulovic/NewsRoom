@@ -2,6 +2,7 @@
 import { format, sub } from "date-fns";
 import { ref } from "vue";
 import { useMyStore } from "../stores/store";
+import { Blog } from "../classes/Classes";
 
 const store = useMyStore();
 
@@ -18,15 +19,8 @@ const searchNews = async () => {
     for (let i = 0; i < data.articles.length; i++) {
       const element = data.articles[i];
       console.log(element);
-      store.blogs.push({
-        title: element.title,
-        desc: element.description,
-        url: element.url,
-        imageURL: element.urlToImage,
-        author: element.author,
-        source: element.source.name,
-        content: element.content,
-      });
+      const blog = new Blog(element.title, element.description, element.url, element.urlToImage, element.author, element.source.name, element.content);
+      store.blogs.push({ blog });
     }
     console.log(store.blogs);
   } catch (error) {
