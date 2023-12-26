@@ -17,8 +17,15 @@ const searchNews = async () => {
     store.blogs = [];
     for (let i = 0; i < data.articles.length; i++) {
       const element = data.articles[i];
+      console.log(element);
       store.blogs.push({
         title: element.title,
+        desc: element.description,
+        url: element.url,
+        imageURL: element.urlToImage,
+        author: element.author,
+        source: element.source.name,
+        content: element.content,
       });
     }
     console.log(store.blogs);
