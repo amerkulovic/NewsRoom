@@ -18,11 +18,9 @@ const searchNews = async () => {
     store.blogs = [];
     for (let i = 0; i < data.articles.length; i++) {
       const element = data.articles[i];
-      console.log(element);
       const blog = new Blog(element.title, element.description, element.url, element.urlToImage, element.author, element.source.name, element.content);
       store.blogs.push({ blog });
     }
-    console.log(store.blogs);
   } catch (error) {
     console.error("Error fetching data:", error);
   }
