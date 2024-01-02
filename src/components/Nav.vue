@@ -34,7 +34,9 @@ const searchNews = async () => {
     </div>
     <div className="opacity-90 hover:opacity-100 flex items-center justify-center text-center w-1/3">
       <input className="h-6 w-1/4 px-4 rounded-tl-xl rounded-bl-xl bg-white bg-opacity-25 outline-none" v-model="searchTerm" />
-      <router-link to="/search"><button className="p-2 h-6 max-sm:px-1 bg-white bg-opacity-25 rounded-none rounded-tr-xl rounded-br-xl flex items-center" @click="searchNews">S</button></router-link>
+      <router-link to="/search"
+        ><button className="p-2 h-6 max-sm:px-1 bg-white bg-opacity-25 rounded-none rounded-tr-xl rounded-br-xl flex items-center" @click="searchNews"><font-awesome-icon icon="fa-solid fa-magnifying-glass" class="h-3 w-4" /></button
+      ></router-link>
     </div>
   </container>
 </template>

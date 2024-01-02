@@ -6,7 +6,7 @@ const store = useMyStore();
 console.log(store.blogs);
 </script>
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center pt-[110px]">
     <container v-for="(object, index) in store.blogs" :key="index" class="flex flex-row w-5/6 py-7 border-b border-slate-400">
       <a :href="object.blog.url" target="_blank">
         <img v-if="object.blog.imageURL" class="w-[263px] h-[175px]" :src="object.blog.imageURL" />
