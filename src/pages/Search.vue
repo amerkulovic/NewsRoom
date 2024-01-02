@@ -3,7 +3,6 @@ import naImage from "../assets/na.png";
 import { useMyStore } from "../stores/store";
 
 const store = useMyStore();
-console.log(store.blogs);
 </script>
 <template>
   <div class="flex flex-col items-center pt-[110px]">
