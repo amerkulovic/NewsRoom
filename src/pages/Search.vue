@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import naImage from "../assets/na.png";
 import { useMyStore } from "../stores/store";
+import Loading from "./Loading.vue";
 
 const store = useMyStore();
 </script>
 <template>
+  <Loading v-if="store.blogs.length === 0" />
   <div class="flex flex-col items-center pt-[110px]">
     <container v-for="(object, index) in store.blogs" :key="index" class="flex flex-row w-5/6 py-7 border-b border-slate-400">
       <a :href="object.blog.url" target="_blank">
