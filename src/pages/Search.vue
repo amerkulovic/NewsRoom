@@ -1,20 +1,9 @@
 <script setup lang="ts">
 import naImage from "../assets/na.png";
-import { Blog } from "../classes/Classes";
 import { useMyStore } from "../stores/store";
 import Loading from "./Loading.vue";
 
 const store = useMyStore();
-
-// const printLogs = async () => {
-//   const result = await store.blogs;
-//   console.log(result);
-// };
-
-// const filteredBlogs = store.blogs.filter((object) => object.blog.title !== "[Removed]")
-
-// printLogs();
-// filteredBlogs();
 </script>
 <template>
   <Loading v-if="store.blogs.length === 0" />

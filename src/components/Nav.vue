@@ -19,7 +19,10 @@ const searchNews = async () => {
     for (let i = 0; i < data.articles.length; i++) {
       const element = data.articles[i];
       const blog = new Blog(element.title, element.description, element.url, element.urlToImage, element.author, element.source.name, element.content);
-      store.blogs.push({ blog });
+
+      if (element.title !== "[Removed]") {
+        store.blogs.push({ blog });
+      }
     }
   } catch (error) {
     console.error("Error fetching data:", error);
