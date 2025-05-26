@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import naImage from "../assets/na.png";
+// @ts-ignore
 import { useMyStore } from "../stores/store";
 import Loading from "./Loading.vue";
 

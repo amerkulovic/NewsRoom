@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-ignore
 const props = defineProps(["title", "text"]);
 </script>
 <template>

@@ -1,6 +1,9 @@
 <script setup lang="ts">
+// @ts-ignore
 import { format, sub } from "date-fns";
+// @ts-ignore
 import { ref } from "vue";
+// @ts-ignore
 import { useMyStore } from "../stores/store";
 import { Blog } from "../classes/Classes";
 
