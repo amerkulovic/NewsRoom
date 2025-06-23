@@ -5,7 +5,7 @@ import Search from "./pages/Search.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
 import { createPinia } from "pinia";
-import "./styles/main.css";
+// import "./styles/main.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 
